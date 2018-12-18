@@ -1,0 +1,7 @@
+<h1>Contact</h1>
+<h3>Name <%= @contact.name %> </h3>
+<h3>Phone <%= @contact.phone %> </h3>
+<form method="post" action="/contacts/<%= @contact.id %>">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+</form>
